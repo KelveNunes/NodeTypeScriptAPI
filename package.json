@@ -4,6 +4,8 @@
   "description": "Typescript Node.js API",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
+    "start": "yarn build && node dist/src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +22,14 @@
   "bugs": {
     "url": "https://github.com/KelveNunes/NodeTypeScriptAPI/issues"
   },
-  "homepage": "https://github.com/KelveNunes/NodeTypeScriptAPI#readme"
+  "homepage": "https://github.com/KelveNunes/NodeTypeScriptAPI#readme",
+  "dependencies": {
+    "module-alias": "^2.2.3",
+    "yarn": "^1.22.21"
+  },
+  "devDependencies": {
+    "@types/module-alias": "^2.0.4",
+    "@types/node": "^20.11.24",
+    "typescript": "^5.3.3"
+  }
 }
