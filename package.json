@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
+    "start:dev":"ts-node-dev src/index.ts",
     "start": "yarn build && node dist/src/index.js",
     "lint": "eslint ./src ./test --ext .ts",
     "lint:fix": "yarn lint --fix",
@@ -27,6 +28,7 @@
   "homepage": "https://github.com/KelveNunes/NodeTypeScriptAPI#readme",
   "dependencies": {
     "module-alias": "^2.2.3",
+    "ts-node-dev": "^2.0.0",
     "yarn": "^1.22.21"
   },
   "devDependencies": {
